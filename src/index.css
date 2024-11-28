@@ -1,0 +1,21 @@
+button{
+  color: red;
+}
+.link{
+  position: relative;
+  text-decoration: none;
+}
+.link::after{
+content: "";
+position: absolute;
+width: 0%;
+bottom: -8px;
+left: 0;
+background-color: white;
+height: 5px;
+transition: .7s;
+}
+.link:hover::after{
+  width: 100%;
+  
+}
